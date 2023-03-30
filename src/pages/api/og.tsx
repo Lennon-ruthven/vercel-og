@@ -1,7 +1,6 @@
 import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
 
-import { baseImageURL } from "@/constants/baseConstants";
 import {
   firaSansBold,
   firaSansLight,
@@ -19,31 +18,38 @@ export default async function handler(req: NextRequest) {
   const firaSansBoldData = await firaSansBold;
   const firaSansRegularData = await firaSansRegular;
   const firaSansLightData = await firaSansLight;
-  const title = searchParams.get("title") ?? "Title";
-  const desc = searchParams.get("desc") ?? "Description";
-  const siteName = searchParams.get("siteName") ?? "yehezgun.com";
-  const imgUrl = searchParams.get("imgUrl") ?? baseImageURL;
+  const title = searchParams.get("title") ?? "Sample Title";
+  const desc = searchParams.get("desc") ?? "Sample Description";
+  const siteName = searchParams.get("siteName") ?? "lennonruthven.me";
+  const imgUrl =
+    searchParams.get("imgUrl") ??
+    "https://og.lennonruthven.me/brian-head.jpg";
   return new ImageResponse(
     (
-      <div tw="bg-gray-800 w-full h-full flex flex-col">
+      <div tw="bg-zinc-800 w-full h-full flex flex-col">
         <div tw="w-full h-10/12 flex items-center justify-between px-24 text-white">
-          <div tw="flex flex-col max-w-3xl">
-            <h1 tw="text-5xl" style={{ fontFamily: "FiraSans-Bold" }}>
+          <div tw="flex flex-col">
+          <div tw="flex flex-col max-w-2xl">
+
+            <h1 tw="text-6xl" style={{ fontFamily: "FiraSans-Bold" }}>
               {title}
             </h1>
-            <h4 tw="text-3xl mt-8" style={{ fontFamily: "FiraSans-Light" }}>
+            </div>
+            <div tw="flex flex-col max-w-2xl">
+            <h4 tw="text-4xl mt-8" style={{ fontFamily: "FiraSans-Light" }}>
               {desc}
             </h4>
+            </div>
           </div>
-          <figure
-            tw={imgUrl === baseImageURL ? "bg-slate-600 rounded-full" : ""}
-          >
+          <figure tw="bg-zinc-600 rounded-full">
             <img
-              tw={imgUrl === baseImageURL ? "rounded-full" : ""}
               src={imgUrl}
               alt="og-image"
               width="256"
               height="256"
+              style={{
+                borderRadius: 100,
+              }}
             />
           </figure>
         </div>
@@ -55,7 +61,7 @@ export default async function handler(req: NextRequest) {
             tw="font-medium text-xl"
             style={{ fontFamily: "FiraSans-Regular" }}
           >
-            Twitter: @yehezgun
+            Twitter: @lennonruthven
           </p>
         </div>
       </div>
