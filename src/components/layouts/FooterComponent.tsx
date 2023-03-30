@@ -4,7 +4,7 @@ const FooterComponent = () => {
   return (
     <footer className="bottom-0 py-16 text-center">
       <a
-        href="https://vercel-og-gamma.vercel.app/"
+        href="https://www.mindcontinuity.live/"
         target="_blank"
         className="cursor-newtab font-semibold hover:underline"
         rel="noreferrer"
