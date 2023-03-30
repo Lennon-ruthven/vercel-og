@@ -20,10 +20,10 @@ export default async function handler(req: NextRequest) {
   const firaSansLightData = await firaSansLight;
   const title = searchParams.get("title") ?? "Sample Title";
   const desc = searchParams.get("desc") ?? "Sample Description";
-  const siteName = searchParams.get("siteName") ?? "lennonruthven.me";
+  const siteName = searchParams.get("siteName") ?? "vercel-og-gamma.vercel.app";
   const imgUrl =
     searchParams.get("imgUrl") ??
-    "https://og.lennonruthven.me/brian-head.jpg";
+    "https://res.cloudinary.com/yehez/image/upload/v1646485864/yehez_avatar_transparent_swwqcq.png";
   return new ImageResponse(
     (
       <div tw="bg-zinc-800 w-full h-full flex flex-col">
