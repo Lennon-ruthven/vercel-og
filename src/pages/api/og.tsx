@@ -20,7 +20,7 @@ export default async function handler(req: NextRequest) {
   const firaSansLightData = await firaSansLight;
   const title = searchParams.get("title") ?? "Sample Title";
   const desc = searchParams.get("desc") ?? "Sample Description";
-  const siteName = searchParams.get("siteName") ?? "vercel-og-gamma.vercel.app";
+  const siteName = searchParams.get("siteName") ?? "mindcontinuity.live/";
   const imgUrl =
     searchParams.get("imgUrl") ??
     "https://res.cloudinary.com/yehez/image/upload/v1646485864/yehez_avatar_transparent_swwqcq.png";
