@@ -23,7 +23,7 @@ const Components = () => {
             <h3>Regular Link</h3>
             <div className="flex flex-wrap gap-2">
               <UnstyledLink href="/">Internal Link</UnstyledLink>
-              <UnstyledLink href="https://vercel-og-gamma.vercel.app">
+              <UnstyledLink href="https://www.mindcontinuity.live/">
                 External Link
               </UnstyledLink>
             </div>
@@ -32,7 +32,7 @@ const Components = () => {
             <h3>Primary Link</h3>
             <div className="flex flex-wrap gap-2">
               <PrimaryLink href="/">Regular link</PrimaryLink>
-              <PrimaryLink href="https://vercel-og-gamma.vercel.app">
+              <PrimaryLink href="https://www.mindcontinuity.live/">
                 External link
               </PrimaryLink>
             </div>
@@ -41,7 +41,7 @@ const Components = () => {
             <h3>Underline Link</h3>
             <div className="flex flex-wrap gap-2">
               <UnderlineLink href="/">Internal Link</UnderlineLink>
-              <UnderlineLink href="https://vercel-og-gamma.vercel.app">
+              <UnderlineLink href="https://www.mindcontinuity.live/">
                 External Link
               </UnderlineLink>
             </div>
@@ -49,14 +49,14 @@ const Components = () => {
           <li className="space-y-1">
             <h3>Arrow Link</h3>
             <div className="flex flex-wrap gap-2">
-              <ArrowLink href="https://vercel-og-gamma.vercel.app" direction="left">
+              <ArrowLink href="https://www.mindcontinuity.live/" direction="left">
                 Direction Left
               </ArrowLink>
-              <ArrowLink href="https://vercel-og-gamma.vercel.app" direction="right">
+              <ArrowLink href="https://www.mindcontinuity.live/" direction="right">
                 Direction Right
               </ArrowLink>
               <ArrowLink
-                href="https://vercel-og-gamma.vercel.app"
+                href="https://www.mindcontinuity.live/"
                 direction="right"
                 as={UnstyledLink}
                 className="inline-flex items-center"
@@ -65,7 +65,7 @@ const Components = () => {
               </ArrowLink>
               <ArrowLink
                 as={ButtonLink}
-                href="https://vercel-og-gamma.vercel.app"
+                href="https://www.mindcontinuity.live/"
                 direction="right"
                 variant="outline"
               >
@@ -120,19 +120,19 @@ const Components = () => {
           <li className="space-y-1">
             <h3>Button Link Component</h3>
             <div className="flex flex-wrap gap-2">
-              <ButtonLink href="https://vercel-og-gamma.vercel.app" variant="primary">
+              <ButtonLink href="https://www.mindcontinuity.live/" variant="primary">
                 Primary Button
               </ButtonLink>
-              <ButtonLink href="https://vercel-og-gamma.vercel.app" variant="outline">
+              <ButtonLink href="https://www.mindcontinuity.live/" variant="outline">
                 Outline Button
               </ButtonLink>
-              <ButtonLink href="https://vercel-og-gamma.vercel.app" variant="ghost">
+              <ButtonLink href="https://www.mindcontinuity.live/" variant="ghost">
                 Ghost Button
               </ButtonLink>
-              <ButtonLink href="https://vercel-og-gamma.vercel.app" variant="light">
+              <ButtonLink href="https://www.mindcontinuity.live/" variant="light">
                 Light Button
               </ButtonLink>
-              <ButtonLink href="https://vercel-og-gamma.vercel.app" variant="dark">
+              <ButtonLink href="https://www.mindcontinuity.live/" variant="dark">
                 Dark Button
               </ButtonLink>
             </div>
